@@ -1,8 +1,11 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('D:\python\Project\empolyee_dataset\student_performance_updated_1000.csv')
+# df = pd.read_csv('D:\python\Project\empolyee_dataset\student_performance_updated_1000.csv')
+data = pd.read_csv(r'D:\python\DataScience-ML\DA Project\studentperformance_dataset\uncleaned_data.csv')
 # print(df)
+
+df = pd.DataFrame(data)
 
 # TO READ HIDDEN COLUMNS
 # column = df[['PreviousGrade','ExtracurricularActivities','ParentalSupport','FinalGrade']]
@@ -26,7 +29,7 @@ df['Attendance (%)'] = df['Attendance (%)'].fillna(df['Attendance (%)'].median()
 df['Online Classes Taken'] = df['Online Classes Taken'].fillna(df['Online Classes Taken'].mode()[0])
 
 # print('After changes:')
-# print(df.isnull().sum())
+print(df.isnull().sum())
 
 df.to_csv('cleaned_student_performanance_updated_1000.csv', index=False)
 print('Data cleaning completed')

@@ -25,6 +25,34 @@ studentperformance_dataset/
 │── cleaned_student_performance_updated_1000.csv
 │── README.md
 
+# Dataset Description
+
+The dataset contains information about students and their academic performance. 
+It includes:
+- demographic details
+- study habits
+- attendance
+- extracurricular participation
+- parental support
+- and grades
+
+
+# Columns Included
+
+ Column Name - Description 
+ StudentID - Unique identifier for each student 
+ Name - Student's name 
+ Gender - Gender of the student 
+ AttendanceRate - Student's attendance rate 
+ StudyHoursPerWeek - Weekly study hours 
+ PreviousGrade - Previous academic grade/score 
+ ExtracurricularActivities - Participation in extracurricular activities 
+ ParentalSupport - Level of parental support 
+ FinalGrade - Student's final grade 
+ Study Hours - Total study hours 
+ Attendance (%) - Attendance percentage 
+ Online Classes Taken - Number of online classes attended 
+
 
 # Data Cleaning Performed
 
@@ -83,3 +111,5 @@ Filled numerical columns using the Median, including:
 Zeel Chauhan
 
 Practice Project – Python Data Cleaning with Pandas and NumPy
+
+
